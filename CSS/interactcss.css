@@ -1,0 +1,150 @@
+/* Make the page fill the whole viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-image: url("../Assets/servepic.jpg");
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+	flex:1;
+}
+
+.navbar {
+  background-color: transparent;
+  color: white;
+  height:120px;
+  padding: 0px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  align-items: center;
+}
+
+.navbar .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  height: 127px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.logo img {
+  height: 150px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 12px;
+}
+
+.main-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2); /* semi-transparent black */
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff5c5c;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e54848;
+}
+
+.post, .reply {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f5f5f5;
+  border-left: 4px solid #ff5c5c;
+  border-radius: 6px;
+}
+
+.reply {
+  margin-left: 30px;
+  background: #fefefe;
+  border-left-color: #ccc;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+.actions button {
+  background: none;
+  color: #555;
+  margin-right: 10px;
+  padding: 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.like-btn.liked {
+  color: red;
+}
+
+#questionInput {
+  background-color: rgba(0, 0, 0, 0.0); /* semi-transparent black */
+  backdrop-filter: blur(6px);
+  color: #FFFFFF;
+}
+
+.thread {
+	color: black;
+}
+
+.thread-controls {
+	float: right;
+	padding-top: 10px;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin-top: 90px;
+  height: 10px;
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Interact - Hearts In Service</title>
+  <link href="CSS/interactcss.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="wrapper">
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="Assets/website logo transparent.png" alt="logo">
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">About</a></li>
+          <li><a href="interact.html">Interact</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <h1>Ask a Question</h1>
+    <textarea id="questionInput" placeholder="What's your question?" rows="4"></textarea>
+    <button onclick="postQuestion()">Post</button>
+	<div class="thread-controls">
+  <label for="sortSelect">Sort by:</label>
+        <select id="sortSelect">
+            <option value="newest">Newest</option>
+            <option value="likes">Most Liked</option>
+            <option value="oldest">Oldest</option>
+        </select>
+    </div>
+
+    <div id="thread" class="thread">
+      <!-- Questions and replies will appear here -->
+    </div>
+  </main>
+	</div>
+	 <footer>
+         <div class="container">
+              <p>&copy; 2025 Hearts in Service, HIS</p>
+         </div>
+     </footer>
+
+  <script src="Java/interactjs.js"></script>
+</body>
+</html>
