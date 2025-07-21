@@ -80,7 +80,6 @@ a {
   padding: 5rem 1rem;
   position: relative;
   z-index: 1;
-  min-height: auto;
 }
 
 
@@ -174,7 +173,7 @@ footer {
   background-position: center;
   z-index: -1;
   transition: background-image 1s ease-in-out;
-  display: none;
+
 }
 
 /* Fix nav-links margins on mobile */
