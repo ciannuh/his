@@ -172,11 +172,10 @@ footer {
   .logo img {
     max-height: 100px;
   }
-}
-
-@media (max-width: 600px) {
-  .nav-links {
-    gap: 1rem;
+   body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }
 
