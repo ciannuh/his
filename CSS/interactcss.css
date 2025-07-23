@@ -3,6 +3,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -22,12 +23,14 @@ body {
 .navbar {
   background-color: transparent;
   color: white;
-  height:120px;
+  height:100%;
+  max-height: 120px;
   padding: 0px;
   position: sticky;
   top: 0;
   z-index: 1000;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .navbar .container {
@@ -36,19 +39,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between; 
-  height: 127px;
+  height: 100px;
+  padding: 0 2rem;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  flex-direction: row;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
   font-weight: 500;
+  margin: 10px;
+}
+
+.nav-links a:hover {
+  color: #ffd700; /* gold highlight on hover */
 }
 
 .logo img {
@@ -147,4 +157,46 @@ footer {
   padding-bottom: 50px;
   margin-top: 90px;
   height: 10px;
+}
+/* Responsive tweaks */
+
+/* Fix nav-links margins on mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .logo img {
+    max-height: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    gap: 1rem;
+  }
+}
+
+/* Desktop Only */
+@media (min-width: 768px) {
+  .navbar .container {
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .nav-links {
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links li a {
+    font-size: 1rem;
+  }
 }
